@@ -1,0 +1,18 @@
+/**
+ * Header barriere.h
+ * Description : Déclarations et prototypes de fonction de barrière
+ */
+
+#ifndef BARRIERE_H_INCLUDED
+#define BARRIERE_H_INCLUDED
+
+#define NB_COUREUR 3
+#define NB_TOUR 4
+
+sem_t mutex;
+sem_t barriere;
+sem_t barriere2;
+
+void reusableBarrier(int* coureur,int tour);
+
+#endif // BARRIERE_H_INCLUDED

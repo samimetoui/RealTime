@@ -1,0 +1,52 @@
+First in, first out
+Aller à : Navigation, rechercher
+Page d'aide sur l'homonymie Pour les articles homonymes, voir FIFO.
+
+L'acronyme FIFO est l'abréviation de l'expression anglaise First In, First Out, que l'on peut traduire par « premier arrivé, premier sorti ». Ce terme est employé en informatique pour décrire une méthode de gestion des données consistant à traiter la file d'attente dans l'ordre chronologique.
+Sommaire
+
+    1 Sujet digne d'étude
+    2 Limites de la méthode
+    3 Utilisation
+        3.1 Exemple de comptabilité avec FIFO-PEPS
+    4 Références
+    5 Voir aussi
+
+Sujet digne d'étude
+
+Selon Donald E. Knuth1 les premiers à considérer ce concept comme digne d'étude étaient sans doute les cost accountants.[réf. nécessaire]
+Limites de la méthode
+
+Dans un logiciel informatique, l'avantage de cette politique d'ordonnancement réside dans sa simplicité, cependant elle pénalise les processus à temps bref d'exécution. En effet, si un processus demande beaucoup de temps de calcul, est lancé, suivi par une petite tâche (par exemple: l'utilisateur appuie sur retour dans son traitement de texte) la petite tâche devra attendre la fin de la tache, nécessitant beaucoup de temps, pour s'exécuter.
+
+Cet algorithme est également utilisé comme politique de remplacement des lignes de cache en raison de sa simplicité d'implémentation et de son faible coût. Néanmoins, il présente une anomalie connue sous le nom d'anomalie de Belady : augmenter le nombre d'étages de la pile peut avoir un effet négatif sur la performance.[réf. nécessaire]
+Utilisation
+
+Cette méthode est également très utilisée en comptabilité analytique, et d'une manière générale dans les techniques de gestion des stocks. Elle est dans ce cas souvent traduite par PEPS pour « Premier entré, premier sorti »2. En pratique le produit qui est arrivé le premier dans le stock sera le premier à sortir du stock (pour être vendu, utilisé ou comptabilisé). La méthode PEPS est très utilisée notamment pour les produits périssables. Mais on pourra lui préférer la méthode FEFO en français PPPS (premier périmé, premier sorti).
+
+Dans l'industrie, elle permet également une gestion des stocks de petites pièces (boites de rondelles par exemple) optimisée par rapport au temps demandé pour s'en procurer.
+Exemple de comptabilité avec FIFO-PEPS
+
+Supposons qu'il y ait une sortie de 120 articles dans notre stock aujourd'hui et qu'ils aient été achetés à 3 dates différentes :
+Date 	Quantité 	Prix Unitaire (EURO)
+Mars 2009 	50 	10
+Avril 2009 	55 	11
+Mai 2009 	15 	12
+
+Le calcul du prix FIFO-PEPS commence par le calcul du prix du stock le plus ancien, on remonte ensuite selon un ordre chronologique inverse jusqu'au stock le plus récent. Puisqu'on doit calculer le prix d'un stock de 120 articles, on considère que les 50 premiers ont un prix unitaire de 10 € ; que les 55 suivants ont un prix unitaire de 11 €, et que les 15 articles restants valent 12 € l'unité. Modèle:Cette formule est celle du PRMP (prix de revient moyen pondéré)10,71 € :
+
+FIFO=\frac{50\times 10+55\times 11+15\times 12}{120}=10,71
+
+On remarque qu'en cas d'inflation du prix unitaire de l'article comme dans notre exemple, le prix FIFO-PEPS sous-évalue la valeur des sorties, étant donnée que l'évaluation, selon cette méthode de calcul, de la valeur unitaire des articles est inférieure à leur cours au moment de la vente. Puisque la valeur des sorties est plus petite, le FIFO-PEPS tend aussi à sur-évaluer le nombre d'articles en stock[Pourquoi ?] si l'on se base sur la valeur totale du stock au moment de la vente[Quoi ?]3.
+Références
+
+    ↑ The Art of Computer Programming, Volume 1, Third Edition, p. 459
+    ↑ B- La méthode du premier entré, premier sorti (PEPS / FIFO) [archive], sur le site logistiqueconseil.org
+    ↑ Gérar MELYON, "Comptabilité analytique",3rd Ed. Bréal Ed. Lexifac.Cliquez ici [archive]
+
+Voir aussi
+
+    Last in, first out
+    First expired, first out (FEFO)
+    Anomalie de Belady
+
